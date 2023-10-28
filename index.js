@@ -36,3 +36,25 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDfI2V2WHHyAJTOjnH9mIjQd1d5IWI8NTc",
+  authDomain: "valerysandler-portfolio.firebaseapp.com",
+  projectId: "valerysandler-portfolio",
+  storageBucket: "valerysandler-portfolio.appspot.com",
+  messagingSenderId: "960326296222",
+  appId: "1:960326296222:web:16cd29c2b7c413f0c2d18f",
+  measurementId: "G-V39Y35CQE5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
